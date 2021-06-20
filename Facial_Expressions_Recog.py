@@ -38,7 +38,6 @@ while True:
             preds = classifier.predict(roi)[0]
             label=class_labels[preds.argmax()]
             emoji= emojis[label]
-            label+= " " +emoji 
             if previous!=emoji:
                 previous=emoji
                 print(emoji)
